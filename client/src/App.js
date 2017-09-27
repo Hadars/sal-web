@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   handleClick () {
-    alert('login presswed');
+    alert('login password');
   }
 
   componentDidMount() {

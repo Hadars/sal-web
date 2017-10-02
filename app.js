@@ -23,11 +23,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', index);
-// app.use('/users', users);
+app.use('/', index);
+app.use('/users', users);
 app.use('/api', api);
-app.use(express.static(path.join(__dirname, 'client/build')));
 
+//Direct express where bundled client app is:
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 // catch 404 and forward to error handler

@@ -13,22 +13,22 @@ function DBGetUsers(username) {
   });
 }
 
-function DBGetUser(username) {
+function DBGetUser(username, successCallback) {
   const queryStr = `SELECT * FROM users WHERE username = \'${username}\' LIMIT 1`;
   db.get().query(queryStr, function(err, rows, fields) {
     if (err) throw err;
     console.log('\x1b[33m%s\x1b[0m', `QUERY: ${queryStr}`);
     console.log('\x1b[32m%s',"RESULT: ", JSON.stringify(rows), "\x1b[0m\n");
+    successCallback(rows[0])
   });
 }
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  // res.send('respond with a resource');
   DBGetUsers();
-  DBGetUser('hadar');
-  DBGetUser('yair');
-  res.render('users', { title: 'THIS IS USER LIST', user: 'Hadar' });
+  DBGetUser('hadar', function success(user){
+    res.render('users', { title: `USER PAGE FOR ${user.username}`, email: user.email });
+  });
 });
 
 module.exports = router;

@@ -1,84 +1,44 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title> Fullscreen Div </title>
-  <style>
-    @font-face {
-      font-family: 'Roboto-Medium';
-      src: url(public/fonts/Roboto-Medium.ttf);
-    }
-
-    body {
-      display: flex;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .left {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      background-color: #f4f6f9;
-      border-right: 3px solid #ffd74c;
-    }
-
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .login-section {
-      flex: 1;
-      align-self: center;
-      background-color: white;
-      width: 432px;
-      height: 537px;
-    }
-
-    .alternative {
-      flex: 1;
-    }
-
-    .logo {
-      background: url(public/logo/logo_226x70.png) no-repeat center;
-      flex: 1;
-    }
-
-    .logo-text {
-      text-align: center;
-      font-family: 'Roboto-Medium';
-      font-size: 22px;
-      flex: 1;
-    }
-
-    .right {
-      flex: 1;
-      background: url(image.png) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="login_page.css">
+  <title> Login Page </title>
 </head>
 <body>
   <div class="left">
+
     <div class="logo-container">
         <div class="logo"></div>
         <div class="logo-text">D A S H B O A R D</div>
     </div>
+
     <div class="login-section">
-      <input type="text" name="email" />
-      <input type="text" name="pass" />
-      <button></button>
-      <div class="forgot">
-        <span>Request a demo</span>
-        <span>Forgot your pass</span>
+
+      <div class="email-container">
+        <label class="email-label">Email</label>
+        <input type="text" name="email" />
       </div>
+
+      <div class="password-container">
+        <label class="pass-label">Password</label>
+        <input type="text" name="pass" />
+      </div>
+
+      <div class="button-container">Go to dashboard</div>
+
+      <div class="forgot-container">
+        <span class="request">Request a demo</span>
+        <span class="forgot">Forgot your pass</span>
+      </div>
+
     </div>
-    <div class="alternative"></div>
+
+    <div class="alternative">
+    </div>
+
   </div>
+
+
   <div class="right"></div>
 </body>
 </html>

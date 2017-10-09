@@ -11,8 +11,8 @@ var http = require('http');
 /**
  * DB Connection
  */
-var db = require('../db');
-db.connect();
+// var db = require('../db');
+// db.connect();
 
 
 /**

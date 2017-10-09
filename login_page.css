@@ -5,7 +5,6 @@
 
 body {
   display: flex;
-  /*height: 100vh;*/
   margin: 0;
   font-family: 'Roboto-Medium';
 }
@@ -22,7 +21,6 @@ body {
 .logo-container {
   display: flex;
   flex-direction: column;
-  /*flex: 1;*/
   margin-top: 55px;
   margin-bottom: 35px;
   min-height: 100px;
@@ -30,27 +28,19 @@ body {
 
 .login-section {
   flex: 1;
-  /*display: flex;*/
   flex-direction: column;
   align-self: center;
   align-items: center;
   border: 1px solid #d9e0e9;
-  /*justify-content: space-evenly;*/
   background-color: white;
   width: 52%;
   height: 100%;
   padding: 25px;
   border-radius: 3px;
   max-height: 300px;
-  /*padding-bottom: 35px;*/
 }
 
-/*.login-section > div {
-  margin-bottom: 35px;
-}*/
-
 .login-section .email-container {
-  /*border: 3px solid red;*/
   flex: 1;
   width: -webkit-fill-available;
   margin-bottom: 25px;
@@ -67,7 +57,6 @@ body {
 }
 
 .login-section .password-container {
-  /*border: 3px solid red;*/
   flex: 1;
   width: -webkit-fill-available;
   margin-bottom: 25px;
@@ -88,7 +77,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*flex: 1;*/
   width: -webkit-fill-available;
   border-radius: 3px;
   background-color: #ffd967;
@@ -99,7 +87,6 @@ body {
 }
 
 .login-section .button-container:hover {
-  /*background-color: red;*/
   box-shadow: 3px 3px 3px #adadad
 }
 
@@ -108,7 +95,6 @@ body {
 }
 
 .login-section .forgot-container {
-  /*border: 3px solid red;*/
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -118,14 +104,12 @@ body {
 }
 
 .login-section .forgot-container .request {
-  /*align-self: flex-start;*/
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .login-section .forgot-container .forgot {
-  /*align-self: flex-end;*/
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
@@ -135,9 +119,7 @@ body {
 }
 
 .logo {
-  /*background: url(public/logo/Orginal.png) no-repeat center;*/
   background: url(public/logo/logo_226x70.png) no-repeat center;
-  /*flex: 1;*/
   background-size: contain;
   height: 50px;
 }
@@ -186,15 +168,6 @@ body {
   padding: 25px;
   border: 1px solid #d9e0e9;
   max-height: 140px;
-  /*flex-direction: column;
-  align-self: center;
-  align-items: center;
-  border: 1px solid #d9e0e9;
-  background-color: white;
-  width: 52%;
-  height: 100%;
-  padding: 25px;
-  border-radius: 3px;*/
 }
 
 .linkedin {

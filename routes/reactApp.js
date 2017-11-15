@@ -8,7 +8,8 @@ router.use(function timeLog (req, res, next) {
 })
 
 router.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  // res.sendFile(path.join(__dirname, '../public/', 'login_page.html'));
 });
 
 // // define the home page route
